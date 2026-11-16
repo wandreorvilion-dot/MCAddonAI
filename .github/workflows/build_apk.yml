@@ -24,10 +24,13 @@ jobs:
       - name: Baixar motor llama.cpp
         run: |
           mkdir -p app/src/main/cpp
-          git clone --depth 1 https://github.com app/src/main/cpp/llama.cpp
+          OWNER="ggml-org"
+          NAME="llama.cpp.git"
+          git clone --depth 1 "https://github.com" app/src/main/cpp/llama.cpp
 
       - name: Gerar Gradle Wrapper e Compilar APK
         run: |
+          sudo apt-get update && sudo apt-get install -y gradle
           gradle wrapper --gradle-version 8.7
           chmod +x gradlew
           ./gradlew assembleDebug
