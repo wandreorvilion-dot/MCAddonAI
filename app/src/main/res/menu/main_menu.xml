@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://android.com"
+    xmlns:app="http://android.com">
+
+    <item
+        android:id="@+id/menu_select_model"
+        android:title="Selecionar Modelo IA (.gguf)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_mode_create"
+        android:title="Modo: Criar Addon (Usa Aprendizado)"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_mode_transcribe"
+        android:title="Modo: Transcrever .JAR -> .MCADDON"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_mode_learn"
+        android:title="Modo: Estudar Addon de Referência"
+        app:showAsAction="never" />
+</menu>
